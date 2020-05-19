@@ -63,7 +63,7 @@ class Chat extends Component {
           onSubmitMessage={messageString => this.submitMessage(messageString)}
         />
         <table style={{width: '100%', marginTop: '20px'}}>
-        <tr><td style={{width: '30%'}}><strong>Nome</strong></td><td style={{width: '70%'}}> <strong>Mensagem</strong></td></tr>
+        <tbody>
         {this.state.messages.map((message, index) =>
           <ChatMessage
             key={index}
@@ -71,6 +71,7 @@ class Chat extends Component {
             name={message.name}
           />,
         )}
+        </tbody>
         </table>
       </div>
     )

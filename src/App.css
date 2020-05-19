@@ -26,3 +26,13 @@
   from { transform: rotate(0deg); }
   to { transform: rotate(360deg); }
 }
+
+.chatbox__message {
+  position: relative;
+  display: inline-block;
+  padding: 5px 20px;
+  border-radius: 15px;
+  cursor: default;
+  background: #f1f1f1;
+  transition: all 0.12s;
+}
